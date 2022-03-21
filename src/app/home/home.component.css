@@ -1,0 +1,86 @@
+#goTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #0dcaf0;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transition: .4s;
+}
+
+header {
+  position: relative;
+  height: calc(100vh - 60px);
+}
+
+.service .item {
+  padding: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.service .item i {
+  font-size: 24px;
+  background-color: #0dcaf0;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.service .item:hover {
+  background-color: #0dcaf0;
+  color: #fff;
+  transform: translateY(-20px);
+}
+
+.service .item:hover.item i {
+  background-color: #fff;
+  color: #0dcaf0;
+}
+
+.contact input , textarea {
+  background-color: #dbf5ff !important;
+}
+.contact .alert {
+  padding: 0;
+}
+.contact .alert p {
+  margin: 0;
+}
+footer {
+  background-color: #dbf5ff;
+}
+
+footer .social-icons a i {
+  margin: 0 5px;
+  color: #08c;
+  font-size: 18px
+}
+
+
+@media (max-width: 991.98px) {
+
+  header{
+    height: auto;
+    top: 60px;
+    padding: 50px 0;
+  }
+
+  .main-heading{
+    width: 100% !important;
+  }
+
+
+}

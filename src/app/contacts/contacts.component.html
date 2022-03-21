@@ -1,0 +1,38 @@
+<section class="contact my-5">
+    <h2 class="text-center text-info fw-bolder mb-3">Our Contacts</h2>
+    <div class="container">
+        <form action="" [formGroup]="contactForm">
+
+            <label for="first_name">First Name</label>
+            <input type="text" formControlName="first_name" class="form-control my-3" id="first_name" placeholder="ex:Fady"/>
+            <div *ngIf="contactForm.get('first_name')?.errors && contactForm.get('first_name')?.touched" class="alert text-danger ">
+                <p *ngIf="contactForm.get('first_name')?.errors?.['required']">* first_name is required</p>
+                <p *ngIf="contactForm.get('first_name')?.errors?.['minlength']">* First Name is min length 3 </p>
+                <p *ngIf="contactForm.get('first_name')?.errors?.['maxlength']">* First Name is max length 8 </p>
+            </div>
+
+            <label for="last_name">Last Name</label>
+            <input type="text" formControlName="last_name" class="form-control my-3" id="last_name" placeholder="ex:Fares"/>
+            <div *ngIf="contactForm.get('last_name')?.errors && contactForm.get('last_name')?.touched" class="alert text-danger ">
+                <p *ngIf="contactForm.get('last_name')?.errors?.['required']">* last_name is required</p>
+                <p *ngIf="contactForm.get('last_name')?.errors?.['minlength']">* Last Name is min length 3 </p>
+                <p *ngIf="contactForm.get('last_name')?.errors?.['maxlength']">* Last Name is max length 8 </p>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="email" formControlName="email" class="form-control my-3" id="email" placeholder="ex:Fady@gmail.com"/>
+            <div *ngIf="contactForm.get('email')?.errors && contactForm.get('email')?.touched" class="alert text-danger ">
+                <p *ngIf="contactForm.get('email')?.errors?.['required']">* Email is required</p>
+                <p *ngIf="contactForm.get('email')?.errors?.['email']">* email is Invalid</p>
+            </div>
+
+
+            <label for="msg">Message</label>
+            <textarea formControlName="msg" class="form-control my-3" id="msg" cols="30" rows="5" placeholder="enter message...."></textarea> 
+            <div *ngIf="contactForm.get('msg')?.errors && contactForm.get('msg')?.touched" class="alert text-danger ">
+                <p *ngIf="contactForm.get('msg')?.errors?.['required']">* Message is required</p>
+            </div>
+            <button type="submit" class="btn btn-info btn-lg my-3 text-light">Send Message</button>
+        </form>
+    </div>
+</section>

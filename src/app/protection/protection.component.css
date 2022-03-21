@@ -1,0 +1,15 @@
+.item i {
+    font-size: 32px;
+    color: #09c;
+}
+
+h5  {
+    cursor: pointer;
+}
+h5:hover , i{
+    color: tomato;
+}
+h5 i {
+    margin-left: 7px;
+    font-size: 18px !important;
+}

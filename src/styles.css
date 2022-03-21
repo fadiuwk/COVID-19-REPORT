@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    overflow: auto;
+    background-color: #F5FAFF;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #F5FAFF; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #85bbe7; 
+    border-radius: 10px;
+  }
+
+a , a:hover {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+#map canvas{
+    cursor: pointer !important;
+}
+
+.txt-blue{
+    color: #09c;
+}

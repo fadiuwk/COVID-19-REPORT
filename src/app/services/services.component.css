@@ -1,0 +1,25 @@
+.item{
+    border: 1px solid #09c;
+    padding: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.item i {
+    font-size: 24px;
+    background-color: #09c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.item:hover{
+    background-color: #09c;
+    color: #fff;
+}
+
+.item:hover.item i{
+    background-color: #fff;
+    color: #09c;
+}
